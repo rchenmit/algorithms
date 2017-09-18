@@ -1,0 +1,311 @@
+
+\documentclass{article}
+
+\usepackage{graphicx}
+
+
+
+
+\usepackage{subfigure}
+
+\usepackage{float}
+
+
+\textheight=9.5in
+\textwidth=6.5in
+\topmargin=-.8in
+\headsep=0pt
+\oddsidemargin=0truecm
+\evensidemargin=0truecm
+\footskip=20pt
+%\footheight=20pt
+%\pretolerance=1600
+%\tolerance=1600
+%\hbadness=1600
+
+
+
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{problem}[theorem]{Problem}
+
+\begin{document}
+
+\title{
+}
+
+%\author{Assigned 1-13-16 , Due 1-19-16 (in class)
+%}
+
+
+\date{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Author's definitions
+
+\newcommand{\DEF}[1]{{\em #1\/}}
+
+\newcommand\chic{\chi_c}
+\newcommand\C{\hbox{${\cal C}$}}
+\newcommand{\RR}{\mbox{$\mathbb R$}}
+\newcommand{\NN}{\mbox{$\mathbb N$}}
+\newcommand{\ZZ}{\mbox{$\mathbb Z$}}
+\newcommand{\eopf}{\raisebox{0.8ex}{\framebox{}}}
+\newcommand{\dist}{\hbox{\rm d}}
+\renewcommand\a{\alpha}
+\renewcommand\b{\beta}
+\renewcommand\c{\gamma}
+\renewcommand\d{\delta}
+\newcommand\D{\Delta}
+\newcommand{\directedchi}{\mbox{$\vec{\chi}$}}
+\newcommand{\directedE}{\mbox{$\vec{E}$}}
+\newcommand{\directedG}{\mbox{$\vec{G}$}}
+\newcommand{\directedK}{\mbox{$\vec{K}$}}
+
+\newenvironment{proof}%
+{\noindent{\bf Proof.}\ }%
+{\hfill\eopf\par\bigskip}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\maketitle
+
+
+\noindent{\bf  Last Name:} $.............................$
+\noindent{\bf First Name:} $..............................$
+\noindent{\bf Email:}          $..............................$
+
+\noindent
+\noindent{ CS 6505, Fall 2017, Homework 1, 9/1/17 Due 9/8/17 in class $~~$Page 1/10 }\\
+
+\noindent
+{\bf Problem 1, Analysis of Algorithm (10 points)}\\
+Where $n$ is a power or 2 and $n > 8$, how many $x$'s does the function Mystery$(n)$ below print?\\
+(a) Write and solve the recurrence exactly using substitution.\\
+(b) State the solution in $O()$ notation. \\
+$~~~~$ Mystery$(n)$\\
+$~~~~$ if $n>8 $ then begin\\
+$~~~~~~~~~~~~~~~~~~~~~~~$ print$("x")$\\
+$~~~~~~~~~~~~~~~~~~~~~~~$ Mystery$\left(  \frac{n}{2}  \right)$\\
+$~~~~~~~~~~~~~~~~~~~~~~~$ Mystery$\left(  \frac{n}{2}  \right)$\\
+$~~~~~~~~~~~~~~~~~~~~~~~$ end\\
+
+\noindent
+{\bf Answer:}
+
+\pagebreak
+\noindent{\bf  Last Name:} $.............................$
+\noindent{\bf First Name:} $..............................$
+\noindent{\bf Email:}          $..............................$
+
+\noindent
+\noindent{ CS 6505, Fall 2017, Homework 1, 9/1/17 Due 9/8/17 in class $~~$Page 2/10 }\\
+
+\noindent
+{\bf Problem 2, Analysis of Algorithm (10 points)}\\
+Where $n$ is a power or 2 and $n \geq 1$, how many $x$'s does the function Mystery$(n)$ below print?\\
+(a) Write and solve the recurrence exactly using substitution.\\
+(b) State the solution in $O()$ notation. \\
+$~~~~$ Mystery$(n)$\\
+$~~~~$ print$("xx")$\\
+$~~~~$ if $n>1 $ then begin\\
+$~~~~~~~~~~~~~~~~~~~~~~~$ Mystery$\left(  \frac{n}{2}  \right)$\\
+$~~~~~~~~~~~~~~~~~~~~~~~$ Mystery$\left(  \frac{n}{2}  \right)$\\
+$~~~~~~~~~~~~~~~~~~~~~~~$ Mystery$\left(  \frac{n}{2}  \right)$\\
+$~~~~~~~~~~~~~~~~~~~~~~~$ end\\
+
+\noindent
+{\bf Answer:}
+
+\pagebreak
+\noindent{\bf  Last Name:} $.............................$
+\noindent{\bf First Name:} $..............................$
+\noindent{\bf Email:}          $..............................$
+
+\noindent
+\noindent{ CS 6505, Fall 2017, Homework 1, 9/1/17 Due 9/8/17 in class $~~$Page 3/10 }\\
+
+\medskip\noindent
+{\bf Problem 3, Analysis of Algorithm (10 points)}\\
+Where $n$ is a power or 2 and $n \geq 1$, how many $x$'s does the function Mystery$(n)$ below print?\\
+(a) Write and solve the recurrence exactly using substitution.\\
+(b) State the solution in $O()$ notation. \\
+$~~~~$ Mystery$(n)$\\
+$~~~~$ for $i:=1$ to $n^2$ \\
+$~~~~~~~~~~~~$ print$("xx")$\\
+$~~~~$ if $n>1 $ then begin\\
+$~~~~~~~~~~~~~~~~~~~~~~~$ Mystery$\left(  \frac{n}{2}  \right)$\\
+$~~~~~~~~~~~~~~~~~~~~~~~$ Mystery$\left(  \frac{n}{2}  \right)$\\
+$~~~~~~~~~~~~~~~~~~~~~~~$ Mystery$\left(  \frac{n}{2}  \right)$\\
+$~~~~~~~~~~~~~~~~~~~~~~~$ end\\
+
+\noindent
+{\bf Answer:}
+
+\pagebreak
+\noindent{\bf  Last Name:} $.............................$
+\noindent{\bf First Name:} $..............................$
+\noindent{\bf Email:}          $..............................$
+
+\noindent
+\noindent{ CS 6505, Fall 2017, Homework 1, 9/1/17 Due 9/8/17 in class $~~$Page 4/10 }\\
+
+
+\medskip\noindent
+{\bf Problem 4, Analysis of Algorithm (10 points)}\\
+Where $n$ is a positive integer,  how many $x$'s does the function Mystery$(n)$ below print?\\
+(a) Write and solve the recurrence exactly using substitution.\\
+(b) State the solution in $O()$ notation. \\
+$~~~~$ Mystery$(n)$\\
+$~~~~$ if $n=1$ then  print$("x")$\\
+$~~~~$ if $n>1 $ then begin\\
+$~~~~~~~~~~~~~~~~~~~~~~~$ Mystery$\left(  n-1  \right)$\\
+$~~~~~~~~~~~~~~~~~~~~~~~$ Mystery$\left(  n-1  \right)$\\
+$~~~~~~~~~~~~~~~~~~~~~~~$ end\\
+
+\noindent
+{\bf Answer:}
+
+\pagebreak
+\noindent{\bf  Last Name:} $.............................$
+\noindent{\bf First Name:} $..............................$
+\noindent{\bf Email:}          $..............................$
+
+\noindent
+\noindent{ CS 6505, Fall 2017, Homework 1, 9/1/17 Due 9/8/17 in class $~~$Page 5/10 }\\
+
+
+\medskip\noindent
+{\bf Problem 5, Min and Max with Fewer Comparisons (10 points)}\\
+Let $a_1 \ldots a_n$ be an input array of $n$ unsorted distint integers, where $n$ is an even number.
+Let $m_{\max}$ be the maximum value of the above integers, and 
+let $m_{\min}$ be the minimum value of the above integers.
+Give an  algorithm that findsboth $m_{\max}$ and $m_{\min}$ using at most $\frac{3n}{2}\! - \! 2$ comparisons.\\
+Argue correctness and running time of your solution.\\
+
+\noindent
+{\bf Answer:}
+
+\pagebreak
+
+\noindent{\bf  Last Name:} $.............................$
+\noindent{\bf First Name:} $..............................$
+\noindent{\bf Email:}          $..............................$\
+
+\noindent
+\noindent{ CS 6505, Fall 2017, Homework 1, 9/1/17 Due 9/8/17 in class $~~$Page 6/10 }\\
+
+\medskip\noindent
+{\bf Problem 6, Sorting Faster than $O(n\log n)$ in Special Case (10 points)}\\
+Let $a_1 \ldots a_n$ be an input array of $n$ unsorted and not necessarily distint integers. 
+Let $m_{\max}$ be the maximum value of the above integers, and 
+let $m_{\min}$ be the minimum value of the above integers.
+Let $M=m_{\max}-m_{\min}$.
+Give an $O(n+M)$ comparison algorithm that sorts the input array.\\
+Argue correctness and running time of your solution.\\
+
+\noindent
+{\bf Answer:}
+
+\pagebreak
+\noindent{\bf  Last Name:} $.............................$
+\noindent{\bf First Name:} $..............................$
+\noindent{\bf Email:}          $..............................$
+
+\noindent
+\noindent{ CS 6505, Fall 2017, Homework 1, 1/9/17 Due 9/8/17 in class $~~$Page 7/10 }\\
+
+
+\medskip\noindent
+{\bf Problem 7, Use of  Pointers (10 points)}\\
+Let $a_1 \ldots a_n$ be $n$ sorted distint integers, 
+and let $\tau$ be an additional given integer.
+Give an $O(n)$ comparison algorithm that decides if there exist distinct indices $i$ and $j$,
+ie $1\leq i < j \leq n$, such that $a_i+a_j=\tau$.\\
+Argue correctness and running time of your solution.\\
+
+\noindent
+{\bf Answer:}
+
+
+\pagebreak
+\noindent{\bf  Last Name:} $.............................$
+\noindent{\bf First Name:} $..............................$
+\noindent{\bf Email:}          $..............................$
+
+\noindent{ CS 6505, Fall 2017, Homework 1, 9/1/17 Due 9/8/17 in class $~~$Page 8/10 }\\
+
+
+\noindent
+{\bf Problem 8, Searching a Tree (10 points)}\\
+You are given a complete binary tree on $n$ nodes, 
+ where each node has a distinct value $w_i$, $1\leq i \leq n$. \\
+The input representation is as follows:\\
+$~~~~$(1) Index 1 is the root of the tree.\\
+$~~~~$(2) For $1\leq i \leq \frac{n-1}{2}$, the left child of $i$ is $2i$ and the right child of $i$ is $2i+1$.\\
+$~~~~$(3) For $2\leq i \leq n$, the parent of $i$ is $\lfloor \frac{n}{2} \rfloor$.\\
+Say that $k$ is a {\em local minimum}  if and only if:\\
+$~~~~$(1) If $k=1$, then $w_1$ is smaller than both its children.\\
+$~~~~$(2) If $k\geq \frac{n-1}{2}$, then $w_k$ is smaller than its parent.\\
+$~~~~$(3) If $2 \leq k \leq \frac{n-1}{2}$, then $w_k$ is smaller than both its children, and
+$w_k$ is also smaller than its parent.\\
+Give an $O(\log n)$ comparison algorithm that finds a local minimum of the binary tree.\\
+Justify correctness and running time.\\
+
+\noindent
+{\bf Answer:}
+
+
+\pagebreak
+\noindent{\bf  Last Name:} $.............................$
+\noindent{\bf First Name:} $..............................$
+\noindent{\bf Email:}          $..............................$
+
+\noindent{ CS 6505, Fall 2017, Homework 1, 9/1/17 Due 9/8/17 in class $~~$Page 9/10 }\\
+
+
+\noindent
+{\bf Problem 9,  Sorting in Linear Time in Special Case (10 points)}\\
+Suppose that $n$ is a perfect square and let $N=n+\sqrt{n}$.\\
+You are given an array of $a_1 \ldots a_N$ distinct integers, where the first $n$ integers are sorted
+$a_1 < a_2 < \ldots < a_n$, but the last $\sqrt{n}$ integers are not sorted. 
+Give an $O(N)$ comparison algorithm that sorts the entire input array $a_1 \ldots a_N$.\\
+
+\noindent{\bf Answer:}
+
+\pagebreak
+\noindent{\bf  Last Name:} $.............................$
+\noindent{\bf First Name:} $..............................$
+\noindent{\bf Email:}          $..............................$
+
+\noindent{ CS 6505, Fall 2017, Homework 1, 9/1/17 Due 9/8/17 in class $~~$Page 10/10 }\\
+
+
+\noindent
+{\bf Problem 10, Comparing Algorithmic Performance (10 points)}\\
+Suppose you are choosing between the following three algorithms:\\
+$\bullet$ Algorithm A solves problems by dividing them into five subproblems of half the size, 
+recursively solving each subproblem, and then combining solutions in linear time.\\
+$\bullet$  Algorithm B solves problems of size $n$ by recursively solving two subproblems of size $(n\! - \! 1)$
+and then combining the solutions in constant time.\\
+$\bullet$ Algorithm C solves problems of size $n$ by dividing them into nine subproblems of size $n/3$,
+recursively solving each subproblem, and then combining the solutions in $O(n^2)$ time.\\
+Solve each recurrence by substitution, and give the running times of each of these algorithms 
+in $O()$ notation. Which one would you choose as the asymptotically fastest? \\
+
+\noindent{\bf Answer:}
+
+
+
+
+
+
+
+
+\end{document}
+
