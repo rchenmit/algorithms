@@ -1,0 +1,178 @@
+
+\documentclass{article}
+
+\usepackage{graphicx}
+
+
+
+
+\usepackage{subfigure}
+
+\usepackage{float}
+
+
+\textheight=9.5in
+\textwidth=6.5in
+\topmargin=-.8in
+\headsep=0pt
+\oddsidemargin=0truecm
+\evensidemargin=0truecm
+\footskip=20pt
+%\footheight=20pt
+%\pretolerance=1600
+%\tolerance=1600
+%\hbadness=1600
+
+
+
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{problem}[theorem]{Problem}
+
+\begin{document}
+
+\title{
+}
+
+%\author{Assigned 1-13-16 , Due 1-19-16 (in class)
+%}
+
+
+\date{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Author's definitions
+
+\newcommand{\DEF}[1]{{\em #1\/}}
+
+\newcommand\chic{\chi_c}
+\newcommand\C{\hbox{${\cal C}$}}
+\newcommand{\RR}{\mbox{$\mathbb R$}}
+\newcommand{\NN}{\mbox{$\mathbb N$}}
+\newcommand{\ZZ}{\mbox{$\mathbb Z$}}
+\newcommand{\eopf}{\raisebox{0.8ex}{\framebox{}}}
+\newcommand{\dist}{\hbox{\rm d}}
+\renewcommand\a{\alpha}
+\renewcommand\b{\beta}
+\renewcommand\c{\gamma}
+\renewcommand\d{\delta}
+\newcommand\D{\Delta}
+\newcommand{\directedchi}{\mbox{$\vec{\chi}$}}
+\newcommand{\directedE}{\mbox{$\vec{E}$}}
+\newcommand{\directedG}{\mbox{$\vec{G}$}}
+\newcommand{\directedK}{\mbox{$\vec{K}$}}
+
+\newenvironment{proof}%
+{\noindent{\bf Proof.}\ }%
+{\hfill\eopf\par\bigskip}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\maketitle
+
+
+\noindent{\bf  Last Name:} $.............................$
+\noindent{\bf First Name:} $..............................$
+\noindent{\bf Email:}          $..............................$
+
+\noindent
+\noindent{ CS 6505, Fall 2017, Homework 3, 9-20-17 Due 9-25-17 by 6pm Klaus 2138 $~~$Page 1/4 }\\
+
+\noindent
+{\bf Problem 1: Subset Sum, Dynamic Programming (25 points)}\\
+You are given $n$ items $\{ 1 , 2 , \ldots n \}$, where each item has a given positive weight $w_i$, $1\leq i \leq n$. 
+You are also given an upper bound $W$. 
+You would line to select a subset $S$ of the items so that $\sum_{i\in S}w_i \leq W$, 
+and, subject to this restriction,  $\sum_{i\in S}w_i \leq W$ is as large as possible. 
+Give an $O(nW)$ algorithm, justify correctness and running time.\\
+
+\noindent
+{\bf Answer:}\\
+
+\pagebreak
+\noindent{\bf  Last Name:} $.............................$
+\noindent{\bf First Name:} $..............................$
+\noindent{\bf Email:}          $..............................$
+
+\noindent
+\noindent{ CS 6505, Fall 2017, Homework 3, 9-20-17 Due 9-25-17 by 6pm Klaus 2138 $~~$Page 2/4 }\\
+
+
+\noindent{\bf Problem 2: Balanced Tree, Dynamic Programming (25 points)}.\\
+Let $T(V,E)$ be a directed acyclic graph with $V=\{ v_1 , \ldots v_n \}$.\\
+Suppose that $T$ is given in topologically sorted order, that is, 
+if $v_i$ is an ancestor of $v_j$ then $i<j$.\\
+Suppose further that  each vertex $v_i \in V$ has a given positive cost $c(v_i) > 0$. 
+Define the weight of a vertex $v_i \in V$ as the sum of the costs of all vertices that can be reached from $v_i$
+(equivalently belong to the subtree rooted at $v_i$) : 
+$weight (v_i) = \sum_{
+\begin{array}{c}
+v_j \in V : \\ \mbox{$v_j$ is reachable from $v_i$} \end{array}
+}  c(v_j)$\\
+Say that $T$ is balanced if and only if, for every vertex $v_i \in V$,
+if $v_i$ has children $u_1 , \ldots , u_k$, then 
+$$
+weight(u_1 ) = weight(u_2) = \ldots = weight(u_k)
+$$
+Give a polynomial time algorithm that decides if a directed tree with costs on its vertices is balanced. \\
+Justify your answer and argue running time.\\
+
+\noindent
+{\bf Answer:}\\
+
+\pagebreak
+\noindent{\bf  Last Name:} $.............................$
+\noindent{\bf First Name:} $..............................$
+\noindent{\bf Email:}          $..............................$
+
+\noindent
+\noindent{ CS 6505, Fall 2017, Homework 3, 9-20-17 Due 9-25-17 by 6pm Klaus 2138 $~~$Page 3/4 }\\
+
+\noindent{\bf Problem 3: Max Independent Set, Dynamic Programming (25 points)}\\
+(a) Consider a line graph on vertices $\{ 1 , \ldots , n \}$
+and edges $\{ 1 , 2 \}$, $\{ 2 , 3 \}$, ... , $\{ (n-1) , n \}$. 
+Each vertex has a positive weight $w_i$, $1 \leq i \leq n$. 
+Give an $O(n)$ algorithm that outputs the weight of a maximum weight independent set of the line graph. 
+You may give a simple description of the algorithm, and/or pseudocode. 
+You should include a short argument of correctness and running time.\\
+(b) Consider a cycle graph on vertices $\{ 1 , \ldots , n \}$
+and edges $\{ 1 , 2 \}$, $\{ 2 , 3 \}$, ... , $\{ (n-1) , n \}$, $\{ n , 1 \}$.
+Each vertex has a positive weight $w_i$, $1 \leq i \leq n$. 
+Give an $O(n)$ algorithm that outputs the weight of a maximum weight independent set of the cycle graph. 
+You may give a simple description of the algorithm, and/or pseudocode. 
+You should include a short argument of correctness and running time.\\
+
+\noindent
+{\bf Answer:} \\
+
+
+\pagebreak
+\noindent{\bf  Last Name:} $.............................$
+\noindent{\bf First Name:} $..............................$
+\noindent{\bf Email:}          $..............................$
+
+\noindent
+\noindent{ CS 6505, Fall 2017, Homework 3, 9-20-17 Due 9-25-17 by 6pm Klaus 2138 $~~$Page 4/4 }\\
+
+\noindent{\bf Problem 4: Longest Path, Dynamic Programming (25 points)}\\
+Let $G(V,E)$ be a directed acyclic graph, where $V=\{ v_1 , \ldots , v_n \}$.
+The graph is presented in adjacency list representation, and with the property 
+that $v_i \rightarrow v_j \in E$ only if $i < j$. 
+Give an $O(|V|+|E|)$ algorithm that finds the length of the longest path (maximum number of edges) from $v_1$ to $v_n$. 
+If there is no path from $v_1$ to $v_2$ then your algorithm should output $\infty$.\\
+Give a short justification of correctness and running time. \\
+
+\noindent
+{\bf Answer:}\\
+
+\end{document}
+
+
+
+
+
