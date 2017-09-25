@@ -8,9 +8,9 @@
 	* Bubblesort vs Mergesort
 	  * Reading: CLRS Chapters 1 and 2
 * Solving recurrences by substitution, Master Theorem
-*                Reading: DPV Book, Chapter 2, Introduction and Chapters 2.2 and 2.3
-*                Reading: CLRS Book Chapter 4.3, 4.4, 4.5 and 4.6
-* 		  Reading: Class Notes on tsquare under Resources (August 23 or 24)
+  * Reading: DPV Book, Chapter 2, Introduction and Chapters 2.2 and 2.3
+  * Reading: CLRS Book Chapter 4.3, 4.4, 4.5 and 4.6
+  * Reading: Class Notes on tsquare under Resources (August 23 or 24)
 * More Examples, Hanoi, Binary Search, Min and Max with few Comparisons
        * Reading: Class Notes on tsquare under Resources (August 28)
        * Reading: CLRS Chapter 9.1

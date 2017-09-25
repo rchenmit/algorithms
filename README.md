@@ -28,4 +28,21 @@
 * Shortest, Longest Paths in DAGS in O(|V|+|E|)
 	 *  Reading: DPV Chapter 6 introduction, and Chapters 6.2 (and 6.1)
 
-## Stuff
+## Exam 1 practice
+
+### Divide and Conquer DPV page 55
+     - Recurrences DPV Paragraph 2.2 (reading)
+     - Mergesort DPV Paragraph 2.3   (reading)
+     - **> Practice Exercises 2.4, 2.5 a,b,b,d,e,g,j, 2.16, 2.17, 2.19, 2.20**
+     - Medians and Order Statistics CLRS Chapter 9
+          - Reading Paragraphs 9.1 and 9.3
+          - **>Practice Exercises 9_3.5, 9_3.6, 9_3.7, 9_3.8**
+### Dynamic Programming
+     - Paths in DAGs DPV paragraph 6.1 (reading)
+     - Longest Increasing Subsequence DPV 6.2 (reading)
+     - Rod Cutting CLRS 15, 15.1 (reading)
+     - Knapsack with and without repetition DPV 6.4 (reading)
+     - Maximum Independent Set in Trees DPV 6.7 (reading)
+     - **>Practice Exercises 6.1, 6.2, 6.3, 6.10, 6.14, 6.18, 6.19 **
+
+** >Practice and understand all material in HW1, HW2 and HW3**
