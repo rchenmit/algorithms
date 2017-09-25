@@ -28,6 +28,7 @@
 * Shortest, Longest Paths in DAGS in O(|V|+|E|)
 	 *  Reading: DPV Chapter 6 introduction, and Chapters 6.2 (and 6.1)
 
+<<<<<<< HEAD
 ## Exam 1 practice
 
 ### Divide and Conquer DPV page 55
@@ -46,3 +47,14 @@
      - **>Practice Exercises 6.1, 6.2, 6.3, 6.10, 6.14, 6.18, 6.19 **
 
 ** >Practice and understand all material in HW1, HW2 and HW3**
+=======
+## Stuff
+## Permanent Office Hours
+
+* Shishir Monday 12.30 - 2.30pm,  CSE common area outside Prof. Polo Chau's office (Klaus 1324) 
+* Zhang Monday  2.30 - 4.30pm, common area outside Prof.Mihail's office (Klaus 2138)
+* Prof Mihail Wed 12 - 4 pm, Klaus 2138
+* Yaling Wed 4 - 6 pm, common area outside Prof.Mihail's office (Klaus 2138)
+* Tristan Thursday, 2 - 4 pm, common area outside Prof.Mihail's office (Klaus 2138)
+* Goutam Friday 2 - 4 pm,  common area outside Prof.Mihail's office (Klaus 2138)
+>>>>>>> 3e3f3370a5dfcb33c55bcb07eefa95c9cccc7228
