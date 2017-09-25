@@ -27,7 +27,7 @@
 * Longest Increasing Subsequence in O(n^2)
 * Shortest, Longest Paths in DAGS in O(|V|+|E|)
 	 *  Reading: DPV Chapter 6 introduction, and Chapters 6.2 (and 6.1)
-============
+
 
 ## Exam 1 practice
 
@@ -48,7 +48,6 @@
 - **>Practice Exercises 6.1, 6.2, 6.3, 6.10, 6.14, 6.18, 6.19**
 - **>Practice and understand all material in HW1, HW2 and HW3**
 
-=========== 
 
 ## Stuff
 ## Permanent Office Hours
