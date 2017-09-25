@@ -45,8 +45,8 @@
 - Rod Cutting CLRS 15, 15.1 (reading)
 - Knapsack with and without repetition DPV 6.4 (reading)
 - Maximum Independent Set in Trees DPV 6.7 (reading)
-- **>Practice Exercises 6.1, 6.2, 6.3, 6.10, 6.14, 6.18, 6.19 **
-->Practice and understand all material in HW1, HW2 and HW3
+- **>Practice Exercises 6.1, 6.2, 6.3, 6.10, 6.14, 6.18, 6.19**
+- **>Practice and understand all material in HW1, HW2 and HW3**
 
 =========== 
 
