@@ -15,7 +15,8 @@
 ## W: max weight the sum can be
 ##
 
-def subset_sum(n, w, W):
+w = array of weights 
+def subset_sum(n, W):
 	## initialize the look-up table
 	for r = 0, ... ,W
 		M[0,r] = 0
